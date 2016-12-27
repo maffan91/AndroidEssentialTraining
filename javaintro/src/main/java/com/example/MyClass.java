@@ -40,11 +40,11 @@ public class MyClass {
 //        System.out.println(myBooleanVar);
 
 //        //4. Character Variable
-        char myCharVariable = 'A';
-        System.out.println(myCharVariable);
-
-        //Increment is possible with chars
-        System.out.println((char) (myCharVariable+1));
+//        char myCharVariable = 'A';
+//        System.out.println(myCharVariable);
+//
+//        //Increment is possible with chars
+//        System.out.println((char) (myCharVariable+1));
 //
 //
 //        //5. Double Variable
