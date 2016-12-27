@@ -40,11 +40,11 @@ public class MyClass {
 //        System.out.println(myBooleanVar);
 
 //        //4. Character Variable
-//        char myCharVariable = 'A';
-//        System.out.println(myCharVariable);
-//
-//        //Increment is possible with chars
-//        System.out.println(myCharVariable+1);
+        char myCharVariable = 'A';
+        System.out.println(myCharVariable);
+
+        //Increment is possible with chars
+        System.out.println((char) (myCharVariable+1));
 //
 //
 //        //5. Double Variable
@@ -146,15 +146,16 @@ public class MyClass {
 //        }while (n == 0);
 
 
-        // Methods overview
-        Methods m = new Methods();
-
-
-        // calling a method that neither takes arguments, nor returns anything
-        m.justPrint();
-
-        // calling a method that takes argument, and returns a value
-        System.out.println(m.calculateArea(4.5));
+//        // Methods overview
+//
+//        Methods m = new Methods();
+//
+//
+//        // calling a method that neither takes arguments, nor returns anything
+//        m.justPrint();
+//
+//        // calling a method that takes argument, and returns a value
+//        System.out.println(m.calculateArea(4.5));
 
 
 
@@ -213,7 +214,8 @@ public class MyClass {
 
     }
 
-    // Extending a final class
+
+//    // Extending a final class
 //    class ExtFinalClass extends FinalClass{ // will show error
 //
 //    }

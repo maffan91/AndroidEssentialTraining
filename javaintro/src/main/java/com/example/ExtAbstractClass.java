@@ -1,8 +1,5 @@
 package com.example;
 
-/**
- * Created by maffan on 12/27/2016.
- */
 
 public class ExtAbstractClass extends AbstractClass {
 
