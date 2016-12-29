@@ -81,7 +81,7 @@ public class MyClass {
 //
 //        // 2. Switch statement
 //
-//        int controlValue = 1;
+//        int controlValue = 2;
 //
 //        switch (controlValue){
 //
@@ -94,7 +94,7 @@ public class MyClass {
 //            }
 //            case 2: {
 //
-//                System.out.println("First Case!");
+//                System.out.println("Second Case!");
 //                break;
 //
 //            }
@@ -113,13 +113,13 @@ public class MyClass {
         // 1. For Loop
 //        for (int i=0;i < 10;i++){
 //
-//            System.out.println("Iteration: " + (i+1) + "!");
-//
 //            //breaking a loop
 //            if(i == 5){
 //                System.out.println("Escaping!!!");
 //                break;
 //            }
+//
+//            System.out.println("Iteration: " + (i+1) + "!");
 //
 //        }
 
@@ -139,15 +139,15 @@ public class MyClass {
 
 
         // it will execute the body first and then check the condition
-//        int n = 10;
+//        int n = 1;
 //        do{
 //            System.out.println("Print it anyway!");
-//
-//        }while (n == 0);
+//            n++;
+//        }while (n == 10);
 
 
 //        // Methods overview
-//
+////
 //        Methods m = new Methods();
 //
 //
@@ -161,6 +161,7 @@ public class MyClass {
 
 
         // Object Oriented Introduction
+
 //        // creating object of Employee class
 //        Employee emp1 = new Employee(20,"John Doe",20000);
 //
@@ -170,15 +171,12 @@ public class MyClass {
 //        // accessing private member with getter
 //        System.out.print(emp1.getAge()); // now OK!
 //
-//
-
 //        // access static data with static method
 //        System.out.print(Employee.getEmployerName());
 //
-//
 //        // trying to modify the final variable
 //        Employee.PI = 3.5; // error, can't modify the final variable
-
+//
 //        // Initializing an object with another object
 //        Employee emp2 = new Employee(emp1);
 //
@@ -189,27 +187,28 @@ public class MyClass {
 
 //        //Dynamic Method Dispatch Example
 //
-//        BaseClass baseReference;
-//        BaseClass baseObject = new BaseClass();
-//        ChildClass childObject = new ChildClass();
-//
-//        // assigning the base object to base reference
-//        baseReference = baseObject;
-//        // will execute the method in the base class
-//        baseReference.who();
-//
-//        baseReference = childObject;
-//        // will execute the method in the child class
-//        baseReference.who();
-//
+        BaseClass baseReference;
+        BaseClass baseObject = new BaseClass();
+        ChildClass childObject = new ChildClass();
+
+        // assigning the base object to base reference
+        baseReference = baseObject;
+        // will execute the method in the base class
+        baseReference.who();
+
+        baseReference = childObject;
+        // will execute the method in the child class
+        baseReference.who();
+
 //        // base reference will only access the overridden methods, for example:
 //        baseReference.accessMe(); // Error: Can't refer to non overridden methods
 
 
-        // Abstract Class Demo
-//        ExtAbstractClass obj = new ExtAbstractClass();
-//        obj.callMe();
-//        obj.callMeToo();
+        //Abstract Class Demo
+        //AbstractClass object = new AbstractClass();
+        ExtAbstractClass obj = new ExtAbstractClass();
+        obj.callMe();
+        obj.callMeToo();
 
 
     }
